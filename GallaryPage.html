@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+  <title> Night in the Woods Slideshow </title>
+  <link rel = "stylesheet" href = "slideS.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+  <br/><br/>
+
+</head>
+
+<div class ="main">
+<body bgcolor="#222">
+
+<div align = "center">
+    <div id="projects" class="style">
+      <h2 class="text-warning mb-3 pb-2" align = "center">Images of Interest</h2>
+	    <hr color="#95b0db" size="5" width="30%"/><br/>
+    </div>
+</div>
+
+  <div class="container">
+
+    <!-- Slider main container -->
+ <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><image src= "images/1.jpg"></image></div>
+      <div class="swiper-slide"><image src= "images/2.webp"></image></div>
+      <div class="swiper-slide"><image src= "images/3.jpg"></image></div>
+      <div class="swiper-slide"><image src= "images/4.jpg"></image></div>
+      <div class="swiper-slide"><image src= "images/5.webp"></image></div>
+      <div class="swiper-slide"><image src= "images/6.webp"></image></div>
+      <div class="swiper-slide"><image src= "images/7.jpg"></image></div>
+      <div class="swiper-slide"><image src= "images/9.webp"></image></div>
+      <div class="swiper-slide"><image src= "images/10.jpg"></image></div>
+      <div class="swiper-slide"><image src= "images/11.jpg"></image></div>
+      <div class="swiper-slide"><image src= "images/14.webp"></image></div>
+
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  
+  </div>
+
+</div>
+
+<br/>
+
+
+<!-- Videos Of Interest Section -->
+<div align = "center">
+    <div id="projects" class="style">
+      <h2 class="text-warning mb-3 pb-2" align = "center">Videos of Interest</h2>
+	    <hr color="#95b0db" size="5" width="30%"/><br/>
+    </div>
+</div>
+
+	  <br/>
+	  <br/>
+	  	  
+
+            <div class="card-body" align = "center">
+			
+              <h3 class="card-title" align = "center"><u>Game Trailer</u></h3><br/>
+              <p class="card-text">
+                Mae Borowski, a college dropout, returns to her hometown of Possum Springs, a decrepit former mining community, <br/>
+                in an effort to pick up her aimless former life and make amends with the friends she left behind. But things have changed. <br/>
+                Her pals have changed and grown, and home seems different today. The wind is getting colder and the leaves are dropping. <br/>
+                As the light diminishes, strange things start to happen.<br/><br/>
+
+                In addition, something is in the woods.
+              </p><br/>
+			  
+			  <iframe width="420" height="315" src="https://www.youtube.com/embed/Nc6f9llfs0w"> </iframe>
+			  
+		    </div>
+			
+		<br/>
+		<br/>
+		
+		
+            <div class="card-body" align = "center">
+			
+              <h3 class="card-title" align = "center"><u>Center of Everything</u></h3><br/>
+              <p class="card-text">
+                Mae Borowski's journey is continued in Center of Everything as she battles her inner demons. <br/>
+                Mae works many jobs, misses many of her friends who have moved away, passed away, or vanished, <br/>
+                and experiences uncanny occurrences that only seem to become worse when unexpected visitors show up, <br/>
+                making her doubt all she thought she knew about Possum Springs—and herself.
+				
+              </p><br/>
+			  
+			  <iframe width="420" height="315" src="https://www.youtube.com/embed/_LfpY8fnmQQ"> </iframe>
+			  
+            </div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<footer style = "position: relative; background-color: #2c402d;"></footer>
+	<!-- Buttons -->
+	<div style= "position: relative; float: right;">
+	  <a href="LandingPage.html"><button>LandingPage</button></a>
+	  <a href="HomePage.html"><button>HomePage</button></a>
+	  <a href="AboutPage.html"><button>AboutPage</button></a>
+	  <a href="ContactPage.html"><button>ContactPage</button></a>
+    <a href="IndexedDB.html"><button>IndexedDB</button></a>
+	  </div>
+	
+	
+		  <div class="style">
+			<h5>
+			  Copyright &copy; 2022 |
+			  Sjanrie Sanya Hendrikz
+			</h5>
+		  </div>
+</footer>	
+
+  <!--Java for SlideShow-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<script>
+    const swiper = new Swiper('.swiper', {
+  autoplay: {
+    delay: 3000,
+    disableOnInteraction: false,
+  },
+  loop: true,
+ 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+</script>
+
+</body></div>
+</html>

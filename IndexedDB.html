@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name ="viewport" content = "width = device-width, initial-scale = 1.0">
+    <title>Night in the Woods</title>
+
+<style>
+    .buttons{
+	  width: 70px;
+		background-color: greenyellow;
+		color: black;
+		text-align: center; 
+		padding: 10px;
+		text-decoration: none;
+		border: none;
+		display: inline-block;
+	}
+	
+	#resetBtn {
+	    background-color: #3ded37;
+	}
+
+  input, textarea, select{
+	    width: 200px;
+		border-radius: 6px;
+	}
+
+  .wh {
+    color: green;
+    font-size: 160%;
+  }
+
+  .style h5{
+         color: #fff;
+}
+
+  .style h3{
+    color: red;
+  }
+
+  .gm {
+    color: white;
+  }
+
+
+</style>
+
+</head>
+
+<body bgcolor="#222">
+
+    <form id="form" align = "center">
+        <div class = "wh">
+        <h1 style="font-family:Brush Script MT;">Games</h1>
+        <hr color="#95b0db" size="5" width="20%"/><br/>
+    </div>
+        <div class = "gm">
+        <p><b>GameName:</b> Unpacking,                         <b>GameType:</b> Indie,                     <b>Rating:</b> 8/10</p>
+        <p><b>GameName:</b> Uncharted: Legacy of Thieves,      <b>GameType:</b> Adventure,                 <b>Rating:</b> 10/10</p>
+        <p><b>GameName:</b> Strange Horticulture,              <b>GameType:</b> Occult Puzzle,             <b>Rating:</b> 10/10</p>
+        <p><b>GameName:</b> Nobody Saves the World,            <b>GameType:</b> Action role-playing,       <b>Rating:</b> 9/10</p>
+        <p><b>GameName:</b> Horizon Forbidden West,            <b>GameType:</b> Action role-playing,       <b>Rating:</b> 9.2/10</p>
+        <p><b>GameName:</b> Total War: Warhammer III,          <b>GameType:</b> Tabletop Wargame,          <b>Rating:</b> 6/10</p>
+        <p><b>GameName:</b> Norco,                             <b>GameType:</b> Piony-and-Click Adventure, <b>Rating:</b> 9/10</p>
+        <p><b>GameName:</b> Stardew Valley,                    <b>GameType:</b> Indie,                     <b>Rating:</b> 10/10</p>
+        <p><b>GameName:</b> Potion Craft: Alchemist Simulator, <b>GameType:</b> Indie,                     <b>Rating:</b> 9/10</p>
+        <p><b>GameName:</b> Stray,                             <b>GameType:</b> Adventure,                 <b>Rating:</b> 10/10</p>
+        
+        </div>
+
+        <script src="https://unpkg.com/localbase/dist/localbase.dev.js"></script>
+        
+        <br/>
+        
+        <div class = "style">
+        <h3><u>You may add a game if you whish!</u></h3></div>
+              
+        <div class = "gm">
+              <label for="firstname"> Game Name </label>
+              <br/>
+              <input type="text" name="gamename" id="gamename" required = "required" placeholder = "                  Uncharted"/> 
+              
+              <br/>
+              
+              <label for="lastname"> Game Type </label>
+              <br/>
+              <input type="text" name="lastname" id="lastname" required = "required" placeholder = "                      Action"/>
+              
+            <div>
+              <label for="rating"> Rating </label>
+              <br/>
+              <input type="tel" name="rating" id="number" required = "required"
+               placeholder = "                       6/10"/>
+            </div>
+        </div>
+            
+            <br/>
+                  
+            <input  id = "submit" class = "buttons" type = "submit" value = "Submit">
+            <input class = "buttons"  id = "resetBtn" type = "reset" value = "Reset">
+            
+            </form><br/>
+        
+            <form id="form" align = "center">
+                <div class = "style">
+            <h3><u>You may delete a game if you whish!</u></h3>
+              
+            <div class = "gm">
+              <label for="firstname"> Game Name </label>
+              <br/>
+              <input type="text" name="gamename" id="gamename" required = "required" placeholder = "                   Uncharted"/> 
+              
+              <br/>
+              
+              <label for="lastname"> Game Type </label>
+              <br/>
+              <input type="text" name="lastname" id="lastname" required = "required" placeholder = "                      Action"/>
+              
+            <div>
+              <label for="rating"> Rating </label>
+              <br/>
+              <input type="tel" name="rating" id="number" required = "required"
+               placeholder = "                       6/10"/>
+            </div>
+            </div>
+            
+            <br/>
+                  
+            <input  id = "submit" class = "buttons" type = "submit" value = "Submit">
+            <input class = "buttons"  id = "resetBtn" type = "reset" value = "Reset">
+            
+            </form>
+
+       <br/><br/><br/>
+
+       <!-- Footer -->
+<footer style = "position: relative;">
+	
+	<!-- Buttons -->
+  <div style= "position: relative; float: right;">
+  <a href="LandingPage.html"><button>LandingPage</button></a>
+  <a href="HomePage.html"><button>HomePage</button></a>
+  <a href="AboutPage.html"><button>AboutPage</button></a>
+  <a href="ContactPage.html"><button>ContactPage</button></a>
+  <a href="GallaryPage.html"><button>GallaryPage</button></a>
+  </div>
+
+
+      <div class="style" style = "position: relative; float: left;">
+        <h5>
+          Copyright &copy; 2022 |
+          Sjanrie Sanya Hendrikz
+        </h5>
+      </div>
+
+  </footer>
+
+        <script>
+
+  let db = new Localbase('Gaming')
+  let buttonDoStuff = document.getElementById('do-stuff')
+  buttonDoStuff.addEventListener('click', doStuff)
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Unpacking',
+        GameType: 'Indie',
+        Rating: '8/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Uncharted: Legacy of Thieves',
+        GameType: 'Adventure',
+        Rating: '10/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Strange Horticulture',
+        GameType: 'Occult Puzzle',
+        Rating: '10/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Nobody Saves the World',
+        GameType: 'Action role-playing ',
+        Rating: '9/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Horizon Forbidden West',
+        GameType: 'Action role-playing ',
+        Rating: '9.2/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Total War: Warhammer III',
+        GameType: 'Tabletop Wargame ',
+        Rating: '6/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Norco',
+        GameType: ' Piony-and-Click Adventure',
+        Rating: '9/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Stardew Valley',
+        GameType: 'Indie',
+        Rating: '10/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Potion Craft: Alchemist Simulator',
+        GameType: 'Indie',
+        Rating: '9/10'
+    })
+  }
+
+  function doStuff() {
+    db.collection('users').add({
+        GameName: 'Stray',
+        GameType: 'Adventure',
+        Rating: '10/10'
+    })
+  }
+
+        </script>
+        
+        
+
+
+</body>
+
+</html>
